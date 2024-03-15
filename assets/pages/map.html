@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Real-Time Location Tracker</title>
+    <style>
+      #map {
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      // Initialize the map
+      var map = L.map("map").setView([51.505, -0.09], 13); // Initial coordinates (London)
+
+      // Add OpenStreetMap tiles
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      var marker; // Define marker globally
+
+      function onLocationFound(e) {
+        var radius = e.accuracy / 2;
+
+        if (!marker) {
+          marker = L.marker(e.latlng).addTo(map);
+        } else {
+          marker.setLatLng(e.latlng);
+        }
+
+        marker
+          .bindPopup("You are within " + radius + " meters from this point")
+          .openPopup();
+
+        L.circle(e.latlng, radius).addTo(map); // Update accuracy circle
+      }
+
+      function onLocationError(e) {
+        alert(e.message);
+      }
+
+      map.on("locationfound", onLocationFound);
+      map.on("locationerror", onLocationError);
+
+      // Call locate every 5 seconds for real-time tracking
+      var updateInterval = setInterval(function () {
+        map.locate();
+      }, 5000);
+    </script>
+  </body>
+</html>
