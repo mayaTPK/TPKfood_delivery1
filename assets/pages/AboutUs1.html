@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Snippet - BBBootstrap</title>
+    <title>About Us</title>
     <link
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,152 +16,8 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
     ></script>
-    <style>
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      /* Track */
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
+    <link rel="stylesheet" href="../css/AboutUs1.css" />
 
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: #888;
-      }
-
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-      }
-      body {
-        font-family: "Montserrat", sans-serif;
-        background: #ffffff;
-        padding: 0;
-        margin: 0;
-      }
-
-      .menu {
-        width: 44px;
-        position: relative;
-        top: -10px;
-        height: 3px;
-        background: #00000054;
-        box-shadow: 0px 11px #ff00006b, 1px 22px #66b78d;
-      }
-
-      nav {
-        padding: 8px;
-        height: 44px;
-        color: #909090;
-        font-weight: lighter;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      h2 {
-        font-weight: lighter;
-      }
-
-      header {
-        width: 100%;
-        height: auto;
-        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
-      }
-
-      .about {
-        text-align: center;
-        color: gray;
-        padding: 40px;
-      }
-
-      .title {
-        font-size: 22px;
-        color: #2c2c2c;
-      }
-
-      .desc {
-        color: #909090;
-        font-weight: 300;
-        font-size: 1.1em;
-        line-height: 1.45em;
-        margin-bottom: 15px;
-        margin-top: 30px;
-        width: 70%;
-        margin: 0 auto;
-      }
-
-      @media (max-width: 630px) {
-        .title {
-          font-size: 18px;
-        }
-      }
-      .row {
-        width: 95%;
-        display: flex;
-        padding: 10px;
-        justify-content: center;
-      }
-
-      @media (max-width: 494px) {
-        .row {
-          flex-direction: column;
-        }
-      }
-      .card {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px;
-      }
-
-      .card_img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        box-shadow: 0 9px 30px -6px rgba(24, 206, 15, 0.3);
-        position: relative;
-        transition: transform 0.4s;
-      }
-
-      .fas,
-      .fab {
-        display: inline-block;
-        position: absolute;
-        color: #63b563;
-        transform: translate(-52%, 75%);
-        font-size: 40px;
-      }
-
-      .card_title {
-        font-size: 20px;
-        margin: 12px;
-        font-weight: bold;
-        color: #000000a8;
-        transition: color 0.2s;
-      }
-
-      .card:hover .card_title {
-        color: #4bd482;
-      }
-
-      .card:hover .card_img {
-        transform: translate(0px, -10px);
-      }
-
-      .card_body {
-        color: #8c9490;
-        font-size: 16px;
-        padding: 0 5px;
-        line-height: 1.5;
-        word-spacing: 4px;
-      }
-    </style>
-  </head>
-  <body className="snippet-body">
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
@@ -173,49 +29,87 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <header>
-      <nav>
-        <h2>LOGO</h2>
-        <div class="menu"></div>
-      </nav>
-    </header>
+  </head>
+  <body className="snippet-body">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html">TPKf</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="../../index.html"
+              >Home</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <main>
       <div class="about">
-        <div class="title"><h1>About The Company</h1></div>
+        <div class="title"><h1>About TPKfood</h1></div>
         <div class="desc">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
-            modi vel blanditiis doloribus commodi impedit!. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit.
+            The Panda King food delivery platform simply called TPKfood, where
+            food meets convenience! Our mission is simple: to satisfy your
+            cravings with mouthwatering dishes delivered right to your home.
+            Let's dive into our story:;
+          </p>
+          <p>
+            Our founder, Mayamiko Chaponda, loved experimenting with flavors and
+            dreamed of sharing them with the world. Fast forward a few years,
+            and we are now your go-to food delivery service in Blantyre.
           </p>
         </div>
       </div>
       <div class="row">
         <div class="card">
           <div class="card_img">
-            <i class="fas fa-rocket"></i>
+            <img src="../img/profile_Maya1.jpg" alt="" />
+            <i class="fas"></i>
           </div>
-          <div class="card_title">HTML</div>
+          <div class="card_title">Mayamiko Chaponda</div>
           <div class="card_body">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>
+              Born on August 14 2000, did his studies at MUST. He is HIM in GIS
+            </p>
           </div>
         </div>
         <div class="card">
           <div class="card_img">
-            <i class="fab fa-cloudversify"></i>
+            <img src="../img/profile_Maya1.jpg" alt="" />
+            <i class="fas"></i>
           </div>
-          <div class="card_title">CSS</div>
+          <div class="card_title">Mayamiko Chaponda</div>
           <div class="card_body">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>
+              Born on August 14 2000, did his studies at MUST. He is HIM in GIS
+            </p>
           </div>
         </div>
         <div class="card">
           <div class="card_img">
-            <i class="fas fa-user-astronaut"></i>
+            <img src="../img/profile_Maya1.jpg" alt="" />
+            <i class="fas"></i>
           </div>
-          <div class="card_title">JAVASCRIPT</div>
+          <div class="card_title">Mayamiko Chaponda</div>
           <div class="card_body">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>
+              Born on August 14 2000, did his studies at MUST. He is HIM in GIS
+            </p>
           </div>
         </div>
       </div>
@@ -225,6 +119,7 @@
       type="text/javascript"
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"
     ></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="#"></script>
     <script type="text/javascript" src="#"></script>
     <script type="text/javascript" src="#"></script>
